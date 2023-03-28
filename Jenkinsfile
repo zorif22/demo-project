@@ -15,5 +15,10 @@ pipeline{
         }
       }
      } 
+   stage('Intigration Testing'){
+      steps{
+        script{
+          sh ' mvn verify'
+        } 
   }
 }
