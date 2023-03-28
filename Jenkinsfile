@@ -7,13 +7,13 @@ pipeline{
     git branch: 'main', url: 'https://github.com/zorif22/demo-project.git'
         }
       }
-    stage('Unit test'){
+    }
+     stage('Unit testing'){
       steps{
         script{
           sh ' mvn test'
         }
       }
-    }
-    } 
+     } 
   }
 }
