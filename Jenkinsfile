@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage ('Git Cloning'){
     steps{
-      scrtpi{
+      script{
     git branch: 'main', url: 'https://github.com/zorif22/demo-project.git'
         }
       }
