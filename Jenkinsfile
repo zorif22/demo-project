@@ -12,10 +12,9 @@ pipeline{
       steps{
        script{
       sh 'mvn test'
-
-}
-}
-}
-}
-}
+          }
+        }
+      }
+    }
+  }
 }
