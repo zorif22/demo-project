@@ -8,5 +8,12 @@ pipeline{
         }
       }
     }
+    stage('Unit testing'){
+      steps{
+        script{
+          sh 'mvn test'
+        }
       }
+    }
+  }
 }
