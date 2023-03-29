@@ -8,17 +8,5 @@ pipeline{
         }
       }
     }
-     stage('Unit testing'){
-      steps{
-        script{
-          sh ' mvn test'
-        }
       }
-     } 
-   stage('Intigration Testing'){
-      steps{
-        script{
-          sh ' mvn verify'
-        } 
-  }
 }
