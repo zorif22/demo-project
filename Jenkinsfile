@@ -53,7 +53,7 @@ pipeline{
 				   nexusUrl: '13.235.63.180:8081', 
 				   nexusVersion: 'nexus3', 
 				   protocol: 'http', 
-				   repository: 'Demo_Project', 
+				   repository: 'DemoProject-1/', 
 				   version: '1.0.0'
 			   }
 		   }
