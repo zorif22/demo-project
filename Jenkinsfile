@@ -15,7 +15,7 @@ pipeline{
 }	
 }
 }
-	stages('Intigration testing'){
+	stage('Intigration testing'){
 	 steps{
 	   script{
 		sh 'mvn verify'
