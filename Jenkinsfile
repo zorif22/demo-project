@@ -8,7 +8,7 @@ pipeline{
 }
 }	
 }
-	satge('unit testing){
+	satge('unit testing'){
 	  steps{
 	    script{
 		sh 'mvn test'
