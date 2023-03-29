@@ -29,5 +29,14 @@ pipeline{
    }	
  }
 }
+	   stage('code quality'){
+		   steps{
+			   script{
+			   withSonarQubeEnv(credentialsId: 'Jenkins') {
+    			sh 'mvn clean package sonar:sonar'
+			   }
+			   }
+		   }
+	   }
    }
 }
